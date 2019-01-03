@@ -14,13 +14,13 @@ def network_getter():
     result =[]
     for j in range(10):
         for i in range(s):
-            time.sleep(5)
             u = urlopen(fdqn + plugins[i])
            # print(type(u))
             data=json.load(u)#.read().decode('utf-8'))
             result.append(data[1])
             data=json.dumps(data)
-
+    file.write(json.dumps(result))
+    file.close()
 t_end = time.time() + 21000
 while time.time() < t_end:
  network_getter()
