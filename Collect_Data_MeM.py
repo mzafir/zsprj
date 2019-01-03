@@ -14,7 +14,7 @@ def memgetter():
     plugins=["mem"]
     s=len(plugins)
     result=[]
-    for j in range(1000000000):
+    for j in range(1000):
      for i in range(s):
        u=urlopen(fdqn+plugins[i])
        data=json.load(u)
