@@ -14,7 +14,7 @@ def cpugetter():
     plugins = ["cpu"]
     s = len(plugins)
     result=[]
-    for j in range(10000):
+    for j in range(100000):
         for i in range(s):
             u = urlopen(fdqn + plugins[i])
             data = json.load(u)
