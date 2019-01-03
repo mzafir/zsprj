@@ -12,7 +12,7 @@ def network_getter():
     plugins = ["network"]
     s = len(plugins)
     result =[]
-    for j in range(10):
+    for j in range(1000000000000):
         for i in range(s):
             u = urlopen(fdqn + plugins[i])
            # print(type(u))
