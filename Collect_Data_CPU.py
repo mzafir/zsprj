@@ -90,7 +90,7 @@ def cleanup():
 #        file1.write(item1)
     file.close()
 
-
-
-cpugetter()
+t_end = time.time() + 21000
+while time.time() < t_end:
+ cpugetter()
 

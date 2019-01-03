@@ -90,7 +90,8 @@ def cleanup():
 #        file1.write(item1)
     file.close()
 
-
-memgetter()
+t_end = time.time() + 21000
+while time.time() < t_end:
+ memgetter()
 
 
