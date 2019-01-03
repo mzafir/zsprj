@@ -70,7 +70,7 @@ def network_getter():
            # data=data.replace("\]\'b\'\[","")
            # print(data)
            # data=data.replace("^b\'\[\{","{")
-            print(data)
+          #  print(data)
             #result.append(data[1])
             #file.write(data)
     file.write(json.dumps(result))
