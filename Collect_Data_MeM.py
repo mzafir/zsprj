@@ -24,8 +24,6 @@ def memgetter():
     file.close()
 
 
-t_end = time.time() + 21000
-while time.time() < t_end:
- memgetter()
+memgetter()
 
 

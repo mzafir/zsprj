@@ -21,8 +21,7 @@ def network_getter():
             data=json.dumps(data)
     file.write(json.dumps(result))
     file.close()
-t_end = time.time() + 21000
-while time.time() < t_end:
- network_getter()
+
+network_getter()
 
 

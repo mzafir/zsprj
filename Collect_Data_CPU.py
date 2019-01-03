@@ -14,16 +14,14 @@ def cpugetter():
     plugins = ["cpu"]
     s = len(plugins)
     result=[]
-    for j in range(1000000000):
+    for j in range(10):
         for i in range(s):
             u = urlopen(fdqn + plugins[i])
             data = json.load(u)
             result.append(data)
-
-    file.write(json.dumps(result))
+            file.write(json.dumps(result))
     file.close()
 
-t_end = time.time() + 21000
-while time.time() < t_end:
- cpugetter()
+
+cpugetter()
 
